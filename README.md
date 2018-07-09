@@ -11,9 +11,7 @@ if not installed you can follow this documentation https://golang.org/doc/instal
 
 ## Deployment
 
-You can run the program with the "port" and "url" sent as command line arguments. If not set by default rpc-proxy will be running on port 8545 and it will be redirecting the request to http://localhost:8080.
-
-Make sure you run your program at 8545 port or specify port while running the program.
+You can run the program with the "port" and "url" sent as command line arguments. If not set by default rpc-proxy will be running on port 8888 and it will be redirecting the request to http://localhost:8588.
 
 Run Commands:
 

@@ -27,14 +27,14 @@ func main() {
 	app.Flags = []cli.Flag{
 		cli.StringFlag{
 			Name:        "port, p",
-			Value:       "8545",
-			Usage:       "default server port, ':8545'",
+			Value:       "8888",
+			Usage:       "default server port, ':8888'",
 			Destination: &port,
 		},
 		cli.StringFlag{
 			Name:        "url, u",
-			Value:       "http://127.0.0.1:8040",
-			Usage:       "redirect url, default is http://127.0.0.1:8040",
+			Value:       "http://127.0.0.1:8588",
+			Usage:       "redirect url, default is http://127.0.0.1:8588",
 			Destination: &redirecturl,
 		},
 		cli.StringFlag{
