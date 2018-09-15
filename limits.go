@@ -26,7 +26,7 @@ func (ls *limiters) tryAddVisitor(ip string) *rate.Limiter {
 	if exists {
 		return limiter
 	}
-	limiter = rate.NewLimiter(per(requestsPerMinuteLimit, time.Minute), 10)
+	limiter = rate.NewLimiter(per(requestsPerMinuteLimit, time.Minute), 30)
 	log.Println("Added new visitor:", ip, " limit ", fmt.Sprint(requestsPerMinuteLimit))
 	ls.visitors[ip] = limiter
 	return limiter
